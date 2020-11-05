@@ -49,10 +49,6 @@ def upscale(dir_name, relative_pathfile, scale_width=2, scale_height=2):
     out_img.save(f"../images/{dl_dir_name}/{relative_pathfile}")
 
 
-def split_color():
-    img = Image.open(Path(root_dir, dir_name, relative_pathfile)).convert('YCbCr')
-
-
 if __name__ == '__main__':
-    # upscale('subsampled', 'airplane/airplane00.tif')
-    split_color()
+    upscale('subsampled', 'airplane/airplane00.tif')
+    
