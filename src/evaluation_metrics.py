@@ -75,7 +75,7 @@ def uiq_window(output, label, win_size):
     output_mean = output.mean()
     label_mean = label.mean()
 
-    n = win_size ** 1
+    n = win_size ** 2
     _1n1 = 1 / (n - 1)
     output_sigma = _1n1 * np.sum((output - output_mean) ** 2)
     label_sigma = _1n1 * np.sum((label - label_mean) ** 2)
